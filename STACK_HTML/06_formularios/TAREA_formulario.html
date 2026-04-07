@@ -1,0 +1,75 @@
+<!--crear un formulario de registro p'ara un sitio web para reservar un hora para elk doctos , deve incluir nomple del paciente , 
+fecha nacimiento sintomas, ciudad (lista_desplegable)
+casilla de verificacion-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctor</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario par el doctor</h1>
+        <hr>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <p>Completa los siguientes datos: </p>
+        <!--Etiqueta para creear un fornulario-->
+        <form>
+            <label>Nombre: </label> <!--Etiqueta que describe al campo-->
+            <input type="text" name="nombre" placeholder="Ejemplo: dea"></imput> <!--Campo de texto-->
+            <br>
+            <label>Correo electronico: </label>
+            <input type="email" name="correo" placeholder="dea123@gmail.com"></imput>
+            <br><br>
+            <label">Edad</label>
+                <input type="number" name="edad"> <!--admite solo numeros-->
+                <br><br>
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="fechaNac">
+                <br><br>
+                <label>Fecha de cita:</label>
+                <input type="date" name="fechaNac"> <!--formato fecha-->
+                <br><br>
+                <label>Genero</label>
+                <input type="radio" name="genero" value="masculino"><!--elemnto de seleccion unica-->
+                masculino
+                <input type="radio" name="genero" value="Femenino">
+                Femenino
+                <br><br>
+                <label>Atencion:</label><br>
+                <select name="Atencion"><!--lista desplegable de opciones-->
+                    <option>Urgencia</option>
+                    <option>Mediana urgencia</option>
+                    <option>Hora</option>
+                    <option>atencion</option>
+                    <br><br><br><br>
+                    <br><br>
+                    </select>
+                        <br><br>
+                        <label>Indicar sintomas</label><br>
+                        <textarea name="Indicar sintomas" rows="4" cols="30"></textarea><!--elemento de texto largo-->
+                        <br><br>
+                        <br><br>
+                        <input type="submit" value="Enviar"><!--boton para enviar-->
+                        <br><br>
+                        <br>
+                        <h2>ciudad</h2>
+                        <label for="ciudad"></label>
+                    <select name="ciudad"><!--lista desplegable de opciones-->
+                        <option>Metropolitana</option>
+                        <option>valparaiso</option>
+                        <option>viña del mar</option>
+                        <option>arica</option>
+                    </select>
+        </form>
+        <!--creacion de tabla con datos-->
+        </table>
+    </main>
+</body>
+
+</html>
