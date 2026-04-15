@@ -1,0 +1,49 @@
+h1 {
+    color: rgb(255, 162, 255);
+    /*color de texto*/
+    font-size: 50px;
+    /*tamaño de letra*/
+}
+
+/*conexion a traves de clases*/
+.rojo {
+    color: red;
+}
+
+/*seleccion a traves de id (#)*/
+#amarillo {
+    color: yellow;
+}
+
+h1 {
+    color: royalblue;
+}
+
+
+p {
+    text-align: right;
+    /*alinear a la derecha*/
+}
+
+.is-centered {
+    text-align: center;
+}
+
+
+.is-orange {
+    color: darkorange;
+}
+
+#container {
+    width: 200px;
+    height: 200px;
+    padding: 10px;/*espacio interno*/
+}
+
+#avatar {
+    width: 150px; /*ancho*/
+    height: 150px;/*alto*/
+    border-radius: 50%;/*forma circular*/
+    margin-top: 20px;/*espacio externo superior*/
+    margin-left: 25px;/*espacio externo izquierdo*/
+}

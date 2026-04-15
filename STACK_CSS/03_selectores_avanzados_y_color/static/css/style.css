@@ -1,0 +1,75 @@
+* {
+    /* outline: 2px dashed crimson; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+.green {
+    color: mediumseagreen;
+}
+
+#red {
+    color: tomato;
+}
+
+.quote p {
+    color: darkslategray;
+    font-style: italic;
+}
+
+.h4 {
+    color: steelblue;
+    font-size: 1.5rem;
+}
+
+body {
+    padding: 40px;
+}
+
+.header>img {
+    height: 50px;
+}
+
+#container p {
+    font-size: 16px;
+    /*Tamaño de letra*/
+    background-color: #444;
+    color: white;
+}
+
+#container p.highlight {
+    font-weight: bold;
+    color: gold;
+}
+
+form {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+input[type="text"] { /*seleccion de elementos a traves de su propiedad*/
+    border: 2px solid royalblue;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: mediumvioletred;
+    border: none; /*quitar borde*/
+    padding: 5px 10px;
+    cursor: pointer; /*manito*/
+}
+.color_nombre {
+    color: tomato;
+}
+
+.color_rgb {
+    color: rgb(9, 255, 0);
+}
+.color_hex {
+    color: darkorchid;
+}
