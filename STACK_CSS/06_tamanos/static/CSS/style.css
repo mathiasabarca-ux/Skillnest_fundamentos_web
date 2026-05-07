@@ -1,21 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Contabiliza bordes*/
+    outline: solid 1px red;
+}
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box; /*contaviliza bordes*/  
+.enca {
+    width: 100%;
+    background-color: rgb(35, 126, 206);
+    padding: 10px;
 }
-.encabezado{
-width: 100%;/*todo el ancho de la page*/
-background-color: black;
-padding: 15px;
-}
-.titulo header{
+
+.titulo1 {
     text-align: center;
-
+    color: white;
 }
-.container{
-    margin:0 auto;
-    width: 950px;
+
+.titulo {
+    color: blue;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.container {
+    outline: solid 1px;
+    margin: 0 auto;
+    width: 900px;
     padding: 20px;
-    outline: solid 1px
+}
+
+/*Tamaños ejemplos CSS*/
+.aceptar {
+    width: 100px;
+    height: 50px;
+}
+
+.caja1 {
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    background-color: gold;
+}
+
+.parra1 {
+    font-size: 40px;
+}
+
+.link1 {
+    font-size: 300%;
+}
+
+/* 
+Manejo del contenido con overflow: visible, hidden, scroll, auto
+*/
+div {
+    width: 200px;
+    height: 100px;
+}
+
+.example1 {
+    height: 100px;
+    width: 300px;
+    background-color: blue;
+}
+
+.example2 {
+    height: 100px;
+    width: 300px;
+    background-color: rgb(67, 67, 67);
+}
+
+.example3 {
+    height: 100px;
+    width: 300px;
+    background-color: rgb(67, 6, 85);
+}
+
+.hidden {
+    overflow: hidden;
+    /* Oculta los elemetos que sobresalen del contenedor */
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+.banner {
+    height: 300px;
+    width: 100%;
+    background: rgb(82, 76, 76) url(/STACK_CSS/06_tamanos/static/images/pepe.png)
+    no-repeat center center;
+    background-size: 100%;
 }
