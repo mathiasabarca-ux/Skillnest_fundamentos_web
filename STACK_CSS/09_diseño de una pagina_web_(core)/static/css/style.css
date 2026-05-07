@@ -27,7 +27,7 @@ body {
     margin: 0 15px;
 }
 
-.wrapper {
+.envoltura {
     background-color: white;
     margin: 40px;
     padding: 40px;
@@ -55,11 +55,11 @@ body {
     margin: 20px;
 }
 
-.ok:hover {
+.rutas:hover {
     background-color: #1a365d;
 }
 
-.ok {
+.rutas {
     display: inline-block;
     color: white;
     text-decoration: none;
