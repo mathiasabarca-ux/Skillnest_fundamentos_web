@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #e9f1f7;
+    background-color: #e9f1f7ce;
     text-align: center;
 }
 
@@ -26,15 +26,6 @@ body {
     text-decoration: none;
     margin: 0 15px;
 }
-
-.envoltura {
-    background-color: white;
-    margin: 40px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
 .banner {
     background-color: #2a4365;
     color: white;

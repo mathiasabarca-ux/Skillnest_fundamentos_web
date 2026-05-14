@@ -1,0 +1,114 @@
+/* 1. Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    /* Fondo oscuro exterior de la imagen */
+    padding-bottom: 40px;
+}
+
+/* 2. Encabezado Superior (Azul Oscuro) */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #34495E;
+    color: white;
+    padding: 40px 20px;
+    gap: 15px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header p {
+    color: #BDC3C7;
+    font-size: 1.1rem;
+}
+
+/* 3. Área Principal y Contenedor de Tarjetas */
+.principal {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+/* Cuadro de fondo claro que encierra el contenido */
+.contenedor-blanco {
+    background-color: #FDFBF7;
+    /* Tono crema/blanco suave de fondo */
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* 4. Banner Naranja Superior */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #E67E22;
+    color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+/* 5. Contenedor Flex para las tres tarjetas */
+.cajita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permite adaptabilidad en pantallas pequeñas */
+    gap: 20px;
+    /* Separación exacta entre los cuadros */
+
+}
+
+/* 6. Estilo Unitario de las Tarjetas Cortas */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #D35400;
+    /* Naranja más oscuro */
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 31%;
+
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #FADBD8;
+}
