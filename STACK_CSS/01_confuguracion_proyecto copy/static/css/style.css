@@ -1,0 +1,9 @@
+h1 {
+    color: purple;/*color de texto*/
+    font-size: 50px; /*tamaño de letra*/
+}
+
+p {
+    color: blue;
+    font-size: 18px;
+}
