@@ -1,114 +1,86 @@
-/* 1. Configuración General */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
 
 body {
-    background-color: #ffffff;
-    /* Fondo oscuro exterior de la imagen */
-    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff9f1;
 }
 
-/* 2. Encabezado Superior (Azul Oscuro) */
 .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    background-color: #34495E;
-    color: white;
+    align-items: center;
+    background-color: #2b445a;
+    color: #ffffff;
     padding: 40px 20px;
-    gap: 15px;
+    text-align: center;
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.header p {
-    color: #BDC3C7;
-    font-size: 1.1rem;
-}
-
-/* 3. Área Principal y Contenedor de Tarjetas */
-.principal {
+.content {
     display: flex;
     justify-content: center;
-    padding: 30px 20px;
+    align-items: flex-start;
+    padding: 40px 20px;
+    flex-grow: 1;
 }
 
-/* Cuadro de fondo claro que encierra el contenido */
-.contenedor-blanco {
-    background-color: #FDFBF7;
-    /* Tono crema/blanco suave de fondo */
-    width: 100%;
-    max-width: 1000px;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+.bloque {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 100%;
+    max-width: 960px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* 4. Banner Naranja Superior */
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e67e22;
+    color: #ffffff;
+    padding: 45px 30px;
+    border-radius: 8px;
     text-align: center;
-    background-color: #E67E22;
-    color: white;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.banner h2 {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-}
 
-/* 5. Contenedor Flex para las tres tarjetas */
-.cajita {
+.caja {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* Permite adaptabilidad en pantallas pequeñas */
     gap: 20px;
-    /* Separación exacta entre los cuadros */
-
+    width: 100%;
 }
 
-/* 6. Estilo Unitario de las Tarjetas Cortas */
-.card {
+
+.item {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
-    background-color: #D35400;
-    /* Naranja más oscuro */
-    color: white;
+    flex: 1;
+    background-color: #d35400;
+    color: #ffffff;
     padding: 30px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    width: 31%;
-
+    border-radius: 8px;
+    text-align: center;
 }
 
-.card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.card p {
+.item code {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
     font-size: 0.95rem;
-    color: #FADBD8;
 }

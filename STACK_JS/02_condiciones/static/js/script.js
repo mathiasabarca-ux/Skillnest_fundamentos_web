@@ -1,5 +1,4 @@
-console.log("Conexion de js exitosa")
-// ✅ Ejercicio 1: Sistema de descuento
+//✅ Ejercicio 1: Sistema de descuento
 // 📝 Enunciado
 // Una tienda realiza descuentos según el monto de compra:
 // Si la compra es mayor o igual a $50.000 → 20% descuento
@@ -11,19 +10,20 @@ console.log("Conexion de js exitosa")
 // Luego mostrar:
 // Descuento aplicado
 // Total a pagar
-function sistemaDescuento() {
-    let nombreCliente = prompt("Ingrese el nombre del cliente:");
-    let monto = parseInt(prompt("Ingrese el monto de compra:"));
-    if (monto >= 50000) {
-        alert(`el monto con descuento es de: ${monto - (monto * 0.2)}`)
-    } else if (monto >= 30000) {
-        alert(`el monto con descuento es de: ${monto - (monto * 0.1)}`)
-    } else if (monto < 30000 && monto > 0) {
-        alert(`el monto final es de: ${monto}. Sin descuento`)
-    } else {
-        alert("ingresa monto valido")
+function ejercicio1() {
+    let nombreCliente = prompt("Ingrese su nombre:");
+    let montoCompra = parseFloat(prompt("Ingrese el monto de su compra:"));
+if (isNaN(montoCompra) || montoCompra < 0) {
+        alert("Por favor, ingrese un monto válido.");
+        return;
+    }
+    else if (montoCompra >= 50000) {
+        let descuento = montoCompra * 0.20;
+        let totalPagar = montoCompra - descuento;
+        alert(`Cliente: ${nombreCliente}\nDescuento aplicado: $${descuento.toFixed(2)}\nTotal a pagar: $${totalPagar.toFixed(2)}`);
     }
 }
+// ✅ Ejercicio 2: Acceso a evento
 // 📝 Enunciado
 // Una persona puede ingresar a un evento si:
 // Tiene 18 años o más
@@ -34,7 +34,15 @@ function sistemaDescuento() {
 // Mostrar:
 // “Acceso permitido”
 // o “Acceso denegado”
-
+function ejercicio2() {
+    let edad = parseInt(prompt("Ingrese su edad:"));
+    let acompañado = prompt("¿Viene acompañado por un adulto? (si/no)").toLowerCase();
+    if (edad >= 18 || acompañado === "si") {
+        alert("Acceso permitido");
+    } else {
+        alert("Acceso denegado");
+    }
+}
 // ✅ Ejercicio 3: Clasificación de temperatura
 // 📝 Enunciado
 // Solicitar una temperatura y clasificar:
@@ -44,7 +52,19 @@ function sistemaDescuento() {
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
-
+function ejercicio3() {
+    let temperatura = parseFloat(prompt("Ingrese la temperatura:"));
+    if (temperatura < 10) {
+        alert("Hace frío");
+    } else if (temperatura >= 10 && temperatura <= 24) {
+        alert("Temperatura agradable");
+    } else {
+        alert("Hace calor");
+        if (temperatura > 35) {
+            alert("Temperatura extrema");
+        }
+    }
+}
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
 // Solicitar:
@@ -57,7 +77,17 @@ function sistemaDescuento() {
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
-
+function ejercicio4() {
+    let usuario = prompt("Ingrese su nombre de usuario:");
+    let contraseña = prompt("Ingrese su contraseña:"); 
+    if (usuario === "admin" && contraseña === "12345") {
+        alert("Bienvenido administrador");
+    } else if (usuario === "admin") {
+        alert("Contraseña incorrecta");
+    } else {
+        alert("Usuario no encontrado");
+    }
+}
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
 // Solicitar:
@@ -70,6 +100,19 @@ function sistemaDescuento() {
 // Promedio 6.0 o superior → “Aprobado con excelencia”
 // Promedio entre 4.0 y 5.9 → “Aprobado”
 // Menor a 4.0 → “Reprobado”
-// Además:
-// Si alguna nota es menor a 2.0 mostrar:
-//  “Debe asistir a reforzamiento”.
+function ejercicio5() {
+    let nombreEstudiante = prompt("Ingrese el nombre del estudiante:");
+    let nota1 = parseFloat(prompt("Ingrese la primera nota:"));
+    let nota2 = parseFloat(prompt("Ingrese la segunda nota:"));
+    let nota3 = parseFloat(prompt("Ingrese la tercera nota:"));
+
+    let promedio = (nota1 + nota2 + nota3) / 3;
+
+    if (promedio >= 6.0) {
+        alert(`Estudiante: ${nombreEstudiante}\nPromedio: ${promedio.toFixed(2)}\nEstado: Aprobado con excelencia`);
+    } else if (promedio >= 4.0) {
+        alert(`Estudiante: ${nombreEstudiante}\nPromedio: ${promedio.toFixed(2)}\nEstado: Aprobado`);
+    } else {
+        alert(`Estudiante: ${nombreEstudiante}\nPromedio: ${promedio.toFixed(2)}\nEstado: Reprobado`);
+    }
+}   

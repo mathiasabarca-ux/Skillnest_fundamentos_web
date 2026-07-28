@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Registro Discord Simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
 </head>
+
 <body>
-<br>
-    <h1>Crear una cuenta en Discord</h1>
-    
-    <form>
+    <h1>Crear cuenta de discord</h1>
+    <form action="/registro" method="post">
         <div>
-            <label>Nombre:</label>
-            <input type="text">
+            <label for="nombre_completo">Tu nombre usuario:</label>
+            <input type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingresa tu nombre"> <br><br>
         </div>
-<br>
+
         <div>
-            <label>Apellido:</label>
-            <input type="text">
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo"> <br><br>
         </div>
-<br>
+
         <div>
-            <label>Correo electrónico:</label>
-            <input type="email">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" /><br><br>
         </div>
-<br>
+
         <div>
-            <label>Contraseña:</label>
-            <input type="password">
+            <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar_contraseña" name="confirmar_contraseña"
+                placeholder="Confirma tu contraseña" /><br><br>
         </div>
-<br>
+
         <div>
-            <label>Confirmar contraseña:</label>
-            <input type="password">
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>   
         </div>
-<br>
+
         <div>
-            <label>Fecha de nacimiento:</label>
-            <input type="date">
+            <label for="genero">Género:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="prefiero no decirlo" name="genero" value="otro">
+            <label for="prefiero no decirlo">Prefiero no decirlo</label><br><br>
         </div>
-<br>
+
+        <div> 
+            descripción: <br>  
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Cuéntanos sobre ti..."></textarea>
+        </div>
+
         <div>
-            <label>Género:</label>
-            <input type="radio" name="g"> Masculino
-            <input type="radio" name="g"> Femenino
-            <input type="radio" name="g"> Prefiero no decirlo
+        seleciona tus intereses: <br>  
+        <select name="intereses" id="intereses">
+            <option value="tecnologia">Tecnología</option>
+            <option value="deportes">Deportes</option>
+            <option value="música">Música</option>
+            <option value="viajes">Viajes</option>
+        </select><br><br>
         </div>
-<br>
+
+
         <div>
-            <label>Descripción sobre ti:</label><br>
-            <textarea rows="4" cols="30"></textarea>
+            <input type="checkbox" id="suscribirse" name="suscribirse" checked>
+            <label for="suscribirse">acepto los <a href="#">términos y condiciones</a>.</label>
         </div>
-<br>
-        <div>
-            <label>Selecciona tus intereses:</label><br>
-            <select multiple size="4">
-                <option>Música</option>
-                <option>Películas</option>
-                <option>Deportes</option>
-                <option>Tecnología</option>
-            </select>
-        </div>
-<br>
-        <div>
-            <input type="checkbox"> Al registrarte, aceptas los 
-            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1RDr8EuFxagFF35lAyU1fYlI-IPd0rAI5Ag&s" target="_blank">Términos y condiciones</a> de Discord.
-        </div>
-<br>
-        <button type="submit">Registrarse</button>
+
+        <input type="submit" value="Registrarse"><br><br>
     </form>
 
 </body>
+
 </html>

@@ -1,16 +1,13 @@
 h1 {
-    color: rgb(255, 162, 255);
-    /*color de texto*/
-    font-size: 50px;
-    /*tamaño de letra*/
+    color: chartreuse;
 }
 
-/*conexion a traves de clases*/
+/* seleccion a traves de su clase */
 .rojo {
     color: red;
 }
 
-/*seleccion a traves de id (#)*/
+/* seleccion a traves de su id (#) */
 #amarillo {
     color: yellow;
 }
@@ -22,7 +19,7 @@ h1 {
 
 p {
     text-align: right;
-    /*alinear a la derecha*/
+    /*dispone el texto a la derecha - centrado - isquiera*/
 }
 
 .is-centered {
@@ -36,14 +33,22 @@ p {
 
 #container {
     width: 200px;
+    /*ancho*/
     height: 200px;
-    padding: 10px;/*espacio interno*/
+    /*alto*/
+    padding: 10px;
+    /*espacio interno*/
 }
 
 #avatar {
-    width: 150px; /*ancho*/
-    height: 150px;/*alto*/
-    border-radius: 50%;/*forma circular*/
-    margin-top: 20px;/*espacio externo superior*/
-    margin-left: 25px;/*espacio externo izquierdo*/
+    width: 150px;
+    /*ancho*/
+    height: 150px;
+    /*alto*/
+    border-radius: 50%;
+    /*agrega al elemento esquina redondeada*/
+    margin-top: 20px;
+    /*espacio superior del margen*/
+    margin-left: 25px;
+    /*espacio izquierdo del margen*/
 }

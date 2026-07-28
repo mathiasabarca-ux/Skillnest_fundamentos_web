@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     /* Contabiliza bordes*/
-    outline: solid 1px red;
+    outline: solid 0.1px red;
 }
 
 .enca {
@@ -28,6 +28,10 @@
     margin: 0 auto;
     width: 900px;
     padding: 20px;
+}
+
+.row {
+    padding: 30px;
 }
 
 /*Tamaños ejemplos CSS*/
@@ -91,9 +95,68 @@ div {
 }
 
 .banner {
-    height: 300px;
-    width: 100%;
-    background: rgb(82, 76, 76) url(/STACK_CSS/06_tamanos/static/images/pepe.png)
-    no-repeat center center;
+    height: 200px;
+    width: 200px;
+    background: red url(/STACK_CSS/06_tamanos/static/images/banner.png) no-repeat center center;
     background-size: 100%;
+}
+
+/*🟫 Bordes y estilos*/
+.cancelar {
+    border: 2px green;
+    /* dotted: linea segmentada*/
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.articulo {
+    border: 1px solid rgb(red, green, blue);
+    height: 50px;
+    width: 100%;
+}
+
+/*Bordes redondeados*/
+.boton_redondeado {
+    border-radius: 15px;
+    /* redondea esquinas*/
+    padding: 10px 40px;
+}
+
+.caja_redondeado {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+}
+.cajitas{
+    width: 100px;
+    height: 40px;
+    outline: solid 1px blue;
+}
+.box1{background-color: azure;
+    padding: 10px;
+}
+.box2{background-color: yellow;
+    padding-top: 0px;/*espacio interno: arriba*/
+    padding-right: 5px;/*espacio interno: derecha*/
+    padding-bottom: 0%;/*espacio interno: abajo*/
+    padding-left: 5px;/*espacio interno: izquierda*/
+    /*padding: 0px 5px 0px 5px -->  aplicanco en todos los lados;*/
+    /* padding: 0px 5px ---> 0px del eje (Y) y 5px del eje (x)*/
+}
+.box3{background-color: coral;
+    margin: 10px;/*Margen externo: Separa elementos*/
+}
+.box4{background-color: green;
+    margin: 0px 10px;/* eje x modificado con margin*/
+    padding: 5px 0px;/*eje y modificado con padding*/
+}
+.box5{
+    background-color: rgb(15, 15, 65);
+    float: left;
+    width: 100px;
 }
