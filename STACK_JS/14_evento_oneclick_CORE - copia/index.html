@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Social</title>
+    <!-- Vinculación del archivo de estilos externos -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="barra-navegacion">
+        <div class="logotipo">Blog Social</div>
+        <input type="text" class="barra-busqueda" placeholder="Buscar publicaciones...">
+        <button id="boton-autenticacion" class="btn-ingresar">Iniciar sesión</button>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-principal">
+        
+        <!-- SECCIÓN PRINCIPAL (PUBLICACIONES) -->
+        <main class="contenido-central">
+            
+            <!-- Publicación 1 -->
+            <article class="tarjeta-publicacion">
+                <h2>Fundamentos de JavaScript</h2>
+                <div class="datos-publicacion">
+                    <p>Publicado por: Carlos Pérez</p>
+                    <p>Fecha: 02/03/2025</p>
+                </div>
+                <p class="texto-descripcion">
+                    JavaScript es un lenguaje de programación que se utiliza en el desarrollo web. 
+                    Aprende los conceptos básicos para comenzar a programar.
+                </p>
+                <button class="btn-reaccion"><span>12</span> Me gusta</button>
+            </article>
+
+            <!-- Publicación 2 -->
+            <article class="tarjeta-publicacion">
+                <h2>Aprende a diseñar con CSS</h2>
+                <div class="datos-publicacion">
+                    <p>Publicado por: Ana Gómez</p>
+                    <p>Fecha: 01/03/2025</p>
+                </div>
+                <p class="texto-descripcion">
+                    El diseño web es una parte fundamental en el desarrollo de aplicaciones web. 
+                    Conoce las propiedades de CSS para crear interfaces atractivas.
+                </p>
+                <button class="btn-reaccion"><span>30</span> Me gusta</button>
+            </article>
+
+        </main>
+
+        <!-- COLUMNA LATERAL -->
+        <aside class="columna-lateral">
+            <div class="tarjeta-bienvenida">
+                <h3>¡Bienvenido!</h3>
+                <p>Explora nuevas publicaciones y conecta con otros usuarios.</p>
+                <button id="boton-perfil" class="btn-ver-perfil">Ver perfil</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Vinculación del archivo de scripts externos -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>

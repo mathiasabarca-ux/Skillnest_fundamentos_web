@@ -4,4 +4,6 @@ function cambiartexto() {
     if (document.getElementoById("titulo").innerText == titulo) {
         document.getElementoById("titulo").innerText = "has cambiado de texto"
     }
+    -if elsre.mkhfd
+    
 }
