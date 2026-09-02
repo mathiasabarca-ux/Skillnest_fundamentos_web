@@ -1,0 +1,49 @@
+/* --- ESTILOS GENERALES Y FUENTE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.barra-navegacion {
+    background-color: #9a7dfa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logotipo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.barra-busqueda {
+    width: 45%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.btn-ingresar {
+    background-color: #5d3fd3;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
