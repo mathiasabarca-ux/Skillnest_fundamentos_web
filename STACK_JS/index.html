@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Comida Mexicana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú Superior de Platillos -->
+    <nav class="top-menu">
+        <div class="menu-item">
+            <div class="img-placeholder"></div>
+            <span>Enchiladas</span>
+        </div>
+        <div class="menu-item">
+            <div class="img-placeholder"></div>
+            <span>Tacos</span>
+        </div>
+        <div class="menu-item">
+            <div class="img-placeholder"></div>
+            <span>Flautas</span>
+        </div>
+        <div class="menu-item">
+            <div class="img-placeholder"></div>
+            <span>Gorditas</span>
+        </div>
+        <div class="menu-item">
+            <div class="img-placeholder"></div>
+            <span>Tostadas</span>
+        </div>
+        <div class="menu-item">
+            <div class="img-placeholder"></div>
+            <span>Enfrijoladas</span>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="main-container">
+        
+        <!-- Banner Central Promocional -->
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h1>La mejor variedad en platillos de <strong>comida mexicana</strong></h1>
+                <p>Contamos con servicio a <span class="highlight">domicilio</span></p>
+            </div>
+            <div class="hero-image">
+                <!-- Aquí va la imagen grande con la variedad de platos -->
+            </div>
+        </section>
+
+        <!-- Lateral de Recomendados -->
+        <aside class="recommended-sidebar">
+            <h2>Recomendados:</h2>
+            
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <h3>Orden de Tacos</h3>
+                        <a href="#">Ver Más...</a>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img"></div>
+                <div class="card-body">
+                    <div class="card-info">
+                        <h3>Orden de Flautas</h3>
+                        <a href="#">Ver Más...</a>
+                    </div>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>
+/* Reseteo básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #333;
+}
+
+/* Menú Superior */
+.top-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    background-color: #fcecd7;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item .img-placeholder {
+    width: 100%;
+    height: 100px;
+    background-color: #d1cbc4; /* Reemplazar con url('tu-imagen.jpg') */
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.menu-item span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a3b32;
+}
+
+/* Contenedor Principal (Grid de 2 columnas) */
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+/* Banner Central */
+.hero-banner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #cccccc; /* Fondo gris del texto */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hero-text {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.hero-text h1 strong {
+    font-weight: 800;
+    display: block;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.hero-text .highlight {
+    color: #ff6600;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.hero-image {
+    background-color: #a39589; /* Reemplazar con url('imagen-central.jpg') */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+/* Lateral de Recomendados */
+.recommended-sidebar h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 140px;
+    background-color: #e0dcd5; /* Reemplazar con url('platillo.jpg') */
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card-info a {
+    color: #551a8b;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.add-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 900px) {
+    .top-menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    .hero-banner {
+        grid-template-columns: 1fr;
+    }
+}

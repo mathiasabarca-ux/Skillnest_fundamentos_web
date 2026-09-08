@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.png" type="image/png">
+    <title>Taco Palace</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Header / Barra de Navegación -->
+    <header class="barra-navegacion">
+        <div class="logotipo">
+            <img src="static/images/logo.png" alt="Logo Taco Palace" class="icono-logo">
+            <span class="palabra-naranja">Taco</span><span class="palabra-negra">Palace</span>
+        </div>
+
+        <div class="header-derecha">
+            <div class="login-contenedor">
+                <input type="email" id="email-input" placeholder="email" class="login-input">
+                <button type="button" id="login-btn" class="login-boton">Login</button>
+            </div>
+            <div class="carrito-contenedor">
+                <img src="static/images/carrito.png" alt="Carrito" class="icono-carrito">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Alineado Simétrico -->
+    <main class="contenedor-centrado">
+        <!-- Barra de Comidas (Categorías) -->
+        <nav class="barra-comida">
+            <div class="item-comida">
+                <img class="img-categoria" src="static/images/enchiladas.jpg" alt="Enchiladas">
+                <h2 class="texto-categoria">Enchiladas</h2>
+            </div>
+            <div class="item-comida">
+                <img class="img-categoria" src="static/images/tacos.jpg" alt="Tacos">
+                <h2 class="texto-categoria">Tacos</h2>
+            </div>
+            <div class="item-comida">
+                <img class="img-categoria" src="static/images/flautas.jpg" alt="Flautas">
+                <h2 class="texto-categoria">Flautas</h2>
+            </div>
+            <div class="item-comida">
+                <img class="img-categoria" src="static/images/gorditas.jpg" alt="Gorditas">
+                <h2 class="texto-categoria">Gorditas</h2>
+            </div>
+            <div class="item-comida">
+                <img class="img-categoria" src="static/images/tostadas.jpg" alt="Tostadas">
+                <h2 class="texto-categoria">Tostadas</h2>
+            </div>
+            <div class="item-comida">
+                <img class="img-categoria" src="static/images/enfrijoladas.jpg" alt="Enfrijoladas">
+                <h2 class="texto-categoria">Enfrijoladas</h2>
+            </div>
+        </nav>
+
+        <!-- Bloque Inferior: Banner Principal + Recomendados -->
+        <div class="contenedor-inferior">
+            <section class="hero-box">
+                <div class="hero-texto">
+                    <h1>
+                        La mejor<br>
+                        variedad en<br>
+                        platillos de<br>
+                        comida<br>
+                        <strong>mexicana</strong>
+                    </h1>
+                    <p>
+                        Contamos con<br>
+                        <span class="subrayado">servicio</span> a<br>
+                        <span class="palabra-naranja">domicilio</span>
+                    </p>
+                </div>
+                <div class="hero-imagen-wrapper">
+                    <img id="hero-img" src="static/images/comida-mexicana.jpg" alt="Platillo principal">
+                </div>
+            </section>
+
+            <aside class="recomendados-box">
+                <h2>Recomendados:</h2>
+
+                <div class="tarjeta-platillo">
+                    <img src="static/images/tacos.jpg" alt="Orden de Tacos">
+                    <div class="tarjeta-info">
+                        <p class="platillo-nombre">Orden de Tacos</p>
+                        <a href="#" class="platillo-link">Ver Más...</a>
+                        <button class="btn-agregar" type="button">+</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-platillo">
+                    <img src="static/images/flautas.jpg" alt="Orden de Flautas">
+                    <div class="tarjeta-info">
+                        <p class="platillo-nombre">Orden de Flautas</p>
+                        <a href="#" class="platillo-link">Ver Más...</a>
+                        <button class="btn-agregar" type="button">+</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
